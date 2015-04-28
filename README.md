@@ -1,7 +1,5 @@
 # css-sprite-mobile
 
-[![NPM version](https://badge.fury.io/js/css-sprite.svg)](http://badge.fury.io/js/css-sprite) [![Build Status](https://travis-ci.org/aslansky/css-sprite.svg?branch=master)](https://travis-ci.org/aslansky/css-sprite) [![Coverage Status](https://img.shields.io/coveralls/aslansky/css-sprite.svg)](https://coveralls.io/r/aslansky/css-sprite) [![Code Climate](https://codeclimate.com/github/aslansky/css-sprite/badges/gpa.svg)](https://codeclimate.com/github/aslansky/css-sprite) [![Dependencies](https://david-dm.org/aslansky/css-sprite.svg)](https://david-dm.org/aslansky/css-sprite)
-
 > A css sprite generator.
 
 > Generates sprites and proper css files out of a directory of images.
@@ -18,22 +16,22 @@ Starting with version 0.9 `css-sprite` has no external dependencies
 
 ## Install
 
-Install with [npm](https://npmjs.org/package/css-sprite)
+Install with [npm](https://npmjs.org/package/css-sprite-mobile)
 
 ```
-npm install css-sprite --save
+npm install css-sprite-mobile --save
 ```
 
-If you want to use `css-sprite` on your cli install with:
+If you want to use `css-sprite-mobile` on your cli install with:
 
 ```
-npm install css-sprite -g
+npm install css-sprite-mobile -g
 ```
 
 ## Command Line Interface
 
 ```sh
-Usage: css-sprite <out> <src>... [options]
+Usage: css-sprite-mobile <out> <src>... [options]
 
 out     path of directory to write sprite file to
 src     glob strings to find source images to put into the sprite
@@ -60,7 +58,7 @@ Options:
 
 ## Programatic usage
 ```
-var sprite = require('css-sprite');
+var sprite = require('css-sprite-mobile');
 sprite.create(options, cb);
 ```
 
@@ -87,7 +85,7 @@ sprite.create(options, cb);
 
 ### Example
 ```js
-var sprite = require('css-sprite');
+var sprite = require('css-sprite-mobile');
 sprite.create({
   src: ['./src/img/*.png'],
   out: './dist/img'
@@ -104,7 +102,7 @@ sprite.create({
 ```js
 var gulp = require('gulp');
 var gulpif = require('gulp-if');
-var sprite = require('css-sprite').stream;
+var sprite = require('css-sprite-mobile').stream;
 
 // generate sprite.png and _sprite.scss
 gulp.task('sprites', function () {
@@ -129,11 +127,11 @@ gulp.task('base64', function () {
 });
 ```
 
-Options to use `css-sprite` with [Gulp](http://gulpjs.com) are the same as for the `sprite.create` function with the exception of `src` and `out`.
+Options to use `css-sprite-mobile` with [Gulp](http://gulpjs.com) are the same as for the `sprite.create` function with the exception of `src` and `out`.
 
 ## Usage with [Grunt](http://gruntjs.com)
 
-Add `css-sprite` as a dependency to your grunt project and then use something like this in your `gruntfile.js`:
+Add `css-sprite-mobile` as a dependency to your grunt project and then use something like this in your `gruntfile.js`:
 
 ```js
 module.exports = function(grunt) {
@@ -165,14 +163,14 @@ module.exports = function(grunt) {
   });
 
   // Load the plugin that provides the "css-sprite" task.
-  grunt.loadNpmTasks('css-sprite');
+  grunt.loadNpmTasks('css-sprite-mobile');
 
   // Default task(s).
   grunt.registerTask('default', ['css_sprite']);
 };
 ```
 
-Options to use `css-sprite` with [Grunt](http://gruntjs.com) are the same as for the `sprite.create` function with the exception of `src` and `out`.
+Options to use `css-sprite-mobile` with [Grunt](http://gruntjs.com) are the same as for the `sprite.create` function with the exception of `src` and `out`.
 
 
 ## Usage with [sass](http://sass-lang.com/) / [less](http://lesscss.org/) / [stylus](http://learnboost.github.io/stylus/)
