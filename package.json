@@ -1,26 +1,25 @@
 {
-  "name": "css-sprite",
-  "version": "0.9.8",
-  "description": "css sprite generator",
+  "name": "css-sprite-mobile",
+  "version": "0.1.0",
+  "description": "css sprite generator fork from css-sprite",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aslansky/css-sprite.git"
+    "url": "https://github.com/lightningtgc/css-sprite-mobile.git"
   },
-  "homepage": "https://github.com/aslansky/css-sprite",
+  "homepage": "https://github.com/lightningtgc/css-sprite-mobile",
   "bugs": {
-    "url": "https://github.com/aslansky/css-sprite/issues"
+    "url": "https://github.com/lightningtgc/css-sprite-mobile/issues"
   },
   "author": {
-    "name": "Alexander Slansky",
-    "email": "alexander@slansky.net",
-    "url": "http://slansky.net"
+    "name": "gctang",
+    "email": "tangguichuan@gmail.com"
   },
   "engines": {
     "node": ">=0.10.0"
   },
   "bin": {
-    "css-sprite": "./bin/cli.js"
+    "css-sprite-mobile": "./bin/cli.js"
   },
   "scripts": {
     "test": "mocha --reporter spec",
