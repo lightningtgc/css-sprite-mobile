@@ -1,0 +1,74 @@
+{
+  "name": "css-sprite",
+  "version": "0.9.8",
+  "description": "css sprite generator",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aslansky/css-sprite.git"
+  },
+  "homepage": "https://github.com/aslansky/css-sprite",
+  "bugs": {
+    "url": "https://github.com/aslansky/css-sprite/issues"
+  },
+  "author": {
+    "name": "Alexander Slansky",
+    "email": "alexander@slansky.net",
+    "url": "http://slansky.net"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "bin": {
+    "css-sprite": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "coveralls": "istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage",
+    "coverage": "istanbul cover _mocha --report html -- -R spec",
+    "hint": "jshint lib/**/*.js index.js",
+    "style": "jscs test/*.js lib/**/*.js index.js"
+  },
+  "main": "./index.js",
+  "keywords": [
+    "sprites",
+    "sprite",
+    "coordinates",
+    "css",
+    "scss",
+    "less",
+    "sass",
+    "stylus",
+    "gulpfriendly",
+    "gruntplugin"
+  ],
+  "dependencies": {
+    "async": "^0.9.0",
+    "color": "^0.8.0",
+    "cssesc": "^0.1.0",
+    "graceful-fs": "^3.0.5",
+    "imageinfo": "^1.0.4",
+    "json2css": "^6.1.0",
+    "layout": "~2.2.0",
+    "lodash": "^3.3.1",
+    "lwip": "0.0.6",
+    "mkdirp": "^0.5.0",
+    "mustache": "^1.1.0",
+    "nomnom": "^1.8.1",
+    "through2": "^0.6.3",
+    "vinyl": "^0.4.6",
+    "vinyl-fs": "1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "mocha-lcov-reporter": "^0.0.2",
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.7",
+    "should": "^5.1.0",
+    "stylus": "^0.50.0",
+    "node-sass": "^2.0.1",
+    "less": "^2.4.0",
+    "clean-css": "^3.1.4",
+    "grunt": "^0.4.5"
+  }
+}
