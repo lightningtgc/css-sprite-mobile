@@ -1,12 +1,9 @@
 {
   "name": "css-sprite-mobile",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "css sprite generator fork from css-sprite",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lightningtgc/css-sprite-mobile.git"
-  },
+  "repository": "https://github.com/lightningtgc/css-sprite-mobile",
   "homepage": "https://github.com/lightningtgc/css-sprite-mobile",
   "bugs": {
     "url": "https://github.com/lightningtgc/css-sprite-mobile/issues"
